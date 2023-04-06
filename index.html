@@ -8,44 +8,48 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<header>
-			<span class="head1"> Tasks </span><span class="head2">List</span>
-		</header>
-		<nav>
-			<a href="./AddTasks.html" target="_blank">
-				<div class="iconblue">
-					<span class="icon">+</span>
+		<div class="header">
+			<div class="head">Tasks <span class="head1"> List</span></div>
+		</div>
+		<div class="nav navindex">
+			<a href="./AddTasks.html" target="_self">
+				<div class="icon iconblue">
+					<span class="icontext">+</span>
 				</div>
 			</a>
-			Add New Task
-		</nav>
-		<div class="container">
-			<a href="./ViewTask.html" target="_self">
-				<div class="box">
-					<div class="boxhead">Trip to Paris</div>
-					<hr />
-					<div class="boxcontent boxcontent1">
-						<input
-							type="checkbox"
-							name="visit church"
-							id="church"
-							value="visit church"
-							checked
-						/>
-						<label for="church">Visit Church</label>
-					</div>
-					<div class="boxcontent boxcontent2">
-						<input
-							type="checkbox"
-							name="shopping"
-							id="shopping"
-							value="shopping"
-						/>
-						<label for="shopping">Shopping</label>
-					</div>
+			<a href="./AddTasks.html" target="_self"> Add New Task</a>
+		</div>
+		<div class="container containerindex">
+			<div class="box boxindex">
+				<div class="boxhead">
+					<a href="./ViewTask.html" target="_self" id="trip_to_paris">
+						Trip to Paris
+					</a>
 				</div>
-			</a>
-			<div class="box">
+				<hr />
+				<div class="boxcontent boxcontent1">
+					<input
+						type="checkbox"
+						name="visit church"
+						id="church"
+						value="visit church"
+						checked
+						disabled
+					/>
+					<label for="church">Visit Church</label>
+				</div>
+				<div class="boxcontent boxcontent2">
+					<input
+						type="checkbox"
+						name="shopping"
+						id="shopping"
+						value="shopping"
+					/>
+					<label for="shopping">Shopping</label>
+				</div>
+			</div>
+
+			<div class="box boxindex">
 				<div class="boxhead">My To Do List</div>
 				<hr />
 				<div class="boxcontent boxcontent1">
@@ -55,6 +59,7 @@
 						id="supermarket"
 						value="visit supermarket"
 						checked
+						disabled
 					/>
 					<label for="supermarket">Visit Supermarket</label>
 				</div>
@@ -69,7 +74,7 @@
 				</div>
 			</div>
 
-			<div class="box">
+			<div class="box boxindex">
 				<div class="boxhead">Movies I will Watch</div>
 				<hr />
 				<div class="boxcontent boxcontent1">
@@ -79,6 +84,7 @@
 						id="stranger things 4"
 						value="stranger things 4"
 						checked
+						disabled
 					/>
 					<label for="stranger things 4">Stranger Things 4</label>
 				</div>
@@ -93,7 +99,7 @@
 				</div>
 			</div>
 
-			<div class="box">
+			<div class="box boxindex">
 				<div class="boxhead">Daily Morning Routine for...</div>
 				<hr />
 				<div class="boxcontent boxcontent1">
@@ -103,6 +109,7 @@
 						id="wake up at 6 am"
 						value="wake up at 6 am"
 						checked
+						disabled
 					/>
 					<label for="wake up at 6 am">Wake up at 6 AM</label>
 				</div>
@@ -116,7 +123,8 @@
 					<label for="sleep at 10 pm">Sleep at 10 PM</label>
 				</div>
 			</div>
-			<div class="box">
+
+			<div class="box boxindex">
 				<div class="boxhead">Books to Read</div>
 				<hr />
 				<div class="boxcontent boxcontent1">
@@ -126,6 +134,7 @@
 						id="design of everyday"
 						value="design of everyday"
 						checked
+						disabled
 					/>
 					<label for="design of everyday">Design of Everyday</label>
 				</div>
@@ -142,3 +151,6 @@
 		</div>
 	</body>
 </html>
+
+<!-- index.html
+div/div(box-shadow)  icon--checked disabled, disabled -->
