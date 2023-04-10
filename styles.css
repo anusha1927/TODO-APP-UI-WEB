@@ -57,7 +57,8 @@ button {
 }
 .navview {
 	left: 433px;
-	top: 44px;
+	top: 90px;
+	position: absolute;
 }
 .icon {
 	border-radius: 50%;
@@ -101,8 +102,12 @@ button {
 	justify-content: center;
 	top: 100px;
 }
-.containeraddtaskitem {
+.containeraddtask {
 	justify-content: center;
+}
+.containeradditem {
+	justify-content: center;
+	bottom: 250px;
 }
 .box,
 .box1 {
